@@ -1,0 +1,6 @@
+{
+  "name": "Menú de Bar",
+  "description": "Single Page Application moderna para la carta de un bar con estilos dark mode neon y carga dinámica desde Google Sheets CSV.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

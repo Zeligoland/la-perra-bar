@@ -1,0 +1,155 @@
+/* ==========================================================================
+   LA PERRA / BENTO GRID - CUSTOM STYLES
+   Industrial Dark Mode with Grid Pattern and Neon Purple Accents
+   ========================================================================== */
+
+:root {
+  --neon-purple: #bc13fe;
+  --dark-bg: #09090b;
+  --card-bg: rgba(18, 18, 20, 0.75);
+  --industrial-gray: #27272a;
+  --f-mono: 'Courier New', Courier, monospace;
+}
+
+/* Background Grid Pattern */
+.bg-grid {
+  background-color: var(--dark-bg);
+  background-image: 
+    linear-gradient(to right, #1a1a1e 1px, transparent 1px),
+    linear-gradient(to bottom, #1a1a1e 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Neon Text & Border Utility Classes */
+.neon-text {
+  color: var(--neon-purple);
+  text-shadow: 0 0 15px rgba(188, 19, 254, 0.5), 0 0 30px rgba(188, 19, 254, 0.25);
+}
+
+.neon-border {
+  border: 1px solid var(--industrial-gray);
+}
+
+.neon-border-active {
+  border: 1px solid var(--neon-purple);
+  box-shadow: 0 0 18px rgba(188, 19, 254, 0.25);
+}
+
+/* Bento Grid Structure */
+.bento-card {
+  background: rgba(18, 18, 20, 0.75);
+  border: 1px solid var(--industrial-gray);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 20px rgba(188, 19, 254, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Category Navigation Buttons */
+.category-btn {
+  background: rgba(18, 18, 20, 0.6);
+  border: 1px solid var(--industrial-gray);
+  color: #a1a1aa;
+  transition: all 0.2s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.category-btn:hover {
+  border-color: var(--neon-purple);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(188, 19, 254, 0.2);
+}
+
+.category-btn.active {
+  background: var(--neon-purple);
+  color: #ffffff;
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 18px rgba(188, 19, 254, 0.45);
+}
+
+/* Price Tag Styling */
+.price-tag {
+  font-family: var(--f-mono);
+  font-weight: 700;
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px rgba(188, 19, 254, 0.4);
+}
+
+/* Skeleton Loading Effect */
+.skeleton {
+  background: linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Neon Spinner */
+.spinner-neon {
+  width: 44px;
+  height: 44px;
+  border: 3px solid rgba(39, 39, 42, 0.8);
+  border-left-color: var(--neon-purple);
+  border-radius: 50%;
+  animation: spin-neon 0.8s linear infinite;
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.3);
+}
+
+@keyframes spin-neon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade In Animation for Items */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

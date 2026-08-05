@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Perra Casa Cultural | Menu </title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-grid bg-[#09090b] text-zinc-200 font-['Space_Grotesk',sans-serif] min-h-screen flex flex-col selection:bg-purple-600 selection:text-white antialiased">
+
+  <!-- Content Container -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+    
+    <!-- Top Announcement Bar -->
+    <div class="bg-zinc-950/90 border-b border-zinc-800/80 text-center py-2 px-4 text-xs tracking-wider text-zinc-400 flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="uppercase font-mono text-[11px]"><strong class="text-zinc-200">Horarios
+        
+        :</strong> Abierto 18:00 — 03:00 HS // Happy Hour hasta las 21:00 HS</span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-b border-zinc-800/80 mb-8">
+      <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-6 pb-6">
+        <div class="text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-zinc-900 border border-zinc-800 text-purple-400 text-[10px] font-mono font-bold tracking-widest uppercase mb-3 shadow-[0_0_12px_rgba(188,19,254,0.15)]">
+            <i data-lucide="zap" class="w-3 h-3 text-purple-400"></i>
+            <span>Carta Digital</span>
+          </div>
+          <div class="flex flex-col items-center md:flex-row md:items-center text-center md:text-left gap-6">
+            <img 
+              class="w-32 h-32 md:w-40 md:h-40 object-cover rounded-xl shrink-0" 
+              src="/assets/jpg/laperralogo.jpg" 
+              alt="La Perra Logo"
+            >
+            
+            <div>
+              <h1 class="font-['Syne',sans-serif] text-4xl sm:text-6xl md:text-7xl font-black tracking-tighter neon-text uppercase leading-none">
+                LA PERRA
+              </h1>
+              <p class="text-xs sm:text-sm tracking-[0.25em] sm:tracking-[0.35em] uppercase text-zinc-500 font-semibold mt-3">
+                Espacio libre transfeminista // anti-especista
+              </p>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="text-center md:text-right text-xs font-mono border-t md:border-t-0 border-zinc-800/80 pt-4 md:pt-0 w-full md:w-auto">
+          <p class="uppercase text-zinc-400 font-bold tracking-wider mb-1">BOGOTÁ D.C.</p>
+          <!-- <p class="text-zinc-500 text-[11px]">Av. Neon 1042 &bull; +54 11 4982-3300</p> -->
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs Container -->
+      <nav id="categories-container" aria-label="Filtro de categorías" class="mt-6 flex items-center justify-center md:justify-start flex-wrap gap-2.5 transition-all">
+        <!-- Dynamic Category Tabs populated by script.js -->
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <!-- Loading / Error / Content Area -->
+      <div id="menu-status" class="w-full"></div>
+      
+      <!-- Products Bento Grid -->
+      <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <!-- Dynamic Bento Cards inserted by script.js -->
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-auto border-t border-zinc-800 bg-[#09090b]/95 backdrop-blur-md py-8 px-4 sm:px-6 lg:px-8 text-zinc-400 text-xs">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+        
+        <!-- Brand Info -->
+        <div class="text-center md:text-left">
+          <h3 class="font-['Syne',sans-serif] text-xl font-bold text-white mb-1.5 tracking-tight flex items-center justify-center md:justify-start gap-2">
+            <span class="w-2.5 h-2.5 bg-purple-500 shadow-[0_0_10px_#bc13fe]"></span>
+            LA PERRA BAR
+          </h3>
+          <p class="text-xs text-zinc-500 font-mono max-w-xs">
+            Industrial Dark Bento Layout. Coctelería de autor y gastronomía urbana.
+          </p>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div class="flex gap-8 text-center md:text-left font-mono">
+          <div>
+            <span class="block text-[10px] uppercase text-zinc-600 font-bold mb-1">Ubicación</span>
+            <span class="text-xs text-zinc-300">Bogotá D.C.</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase text-zinc-600 font-bold mb-1">Horario</span>
+            <span class="text-xs text-zinc-300">Vie - Dom // 18:00 - 03:00</span>
+          </div>
+          <div>
+            <span class="block text-[10px] uppercase text-zinc-600 font-bold mb-1">Redes</span>
+            <a href="#" class="text-xs text-purple-400 hover:underline">@laperracasacultural</a>
+          </div>
+        </div>
+
+        <!-- Social & Sync Info -->
+        <div class="text-center md:text-right font-mono">
+          <p class="text-[10px] uppercase text-zinc-600 font-bold mb-1">Sincronización de Carta</p>
+          <div class="flex items-center gap-2 justify-center md:justify-end text-xs text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-bold uppercase tracking-wider text-[11px]">Sistema Online</span>
+          </div>
+          <p class="text-[10px] text-zinc-600 mt-2">© 2026 La Perra Casa Cultural. Todos los derechos reservados.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
