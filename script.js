@@ -417,7 +417,7 @@ function renderProducts() {
 
         <div class="price-tag text-lg font-mono font-bold mt-auto pt-3 border-t border-zinc-800/60 flex items-center justify-between">
           <span>${formattedPrice}</span>
-          <i data-lucide="arrow-up-right" class="w-4 h-4 text-zinc-600 group-hover:text-purple-400 transition-colors"></i>
+          <i data-lucide="coins" class="w-4 h-4 text-zinc-600 group-hover:text-purple-400 transition-colors"></i>
         </div>
       </article>
     `;
