@@ -13,73 +13,73 @@ const SHEET_URL = 'https://docs.google.com/spreadsheets/d/TU_ID_DE_HOJA/export?f
 const DEMO_MENU_DATA = [
   {
     titulo: 'Viche en Botella 750ml',
-    descripcion: 'Gin macerado con maracuyá, licor de flor de saúco, jugo de lima fresca, jarabe de menta y espuma de clara.',
+    descripcion: 'Botella de viche artesanal de 750 ml.',
     precio: '70000',
     categoria: 'Espirituales'
   },
   {
     titulo: 'Aguardiente Amarillo',
-    descripcion: 'Bourbon envejecido, bitter de cacao artesanal, perfume de piel de naranja quemada y humo de astillas de roble.',
+    descripcion: 'Aguardiente colombiano de anís.',
     precio: '70000',
     categoria: 'Espirituales'
   },
   {
     titulo: 'Shot de Viche',
-    descripcion: 'Gin botánico, infusión de flor mariposa, tónica premium y rodaja de lima verde deshidratada.',
+    descripcion: 'Porción de viche servida en shot.',
     precio: '7000',
     categoria: 'Espirituales'
   },
   {
     titulo: 'Águila',
-    descripcion: 'Cerveza negra cremosa en nitrógeno con notas intensas de café tostado y chocolate amargo.',
+    descripcion: 'Cerveza lager colombiana.',
     precio: '7000',
     categoria: 'Cervezas'
   },
   {
     titulo: 'Poker',
-    descripcion: 'Cerveza negra cremosa en nitrógeno con notas intensas de café tostado y chocolate amargo.',
+    descripcion: 'Cerveza lager colombiana.',
     precio: '7000',
     categoria: 'Cervezas'
   },
   {
     titulo: 'Club Colombia',
-    descripcion: 'Lager rubia balanceada con miel de monte orgánica y un toque de jengibre.',
+    descripcion: 'Cerveza premium colombiana.',
     precio: '8000',
     categoria: 'Cervezas'
   },
   {
     titulo: 'Agua Natural',
-    descripcion: 'Mix de frutos rojos, limonada casera de menta, jengibre y soda de hibisco.',
+    descripcion: 'Agua purificada.',
     precio: '3100',
     categoria: 'Sin Alcohol'
   },
   {
     titulo: 'Agua con Gas',
-    descripcion: 'Mix de frutos rojos, limonada casera de menta, jengibre y soda de hibisco.',
+    descripcion: 'Agua carbonatada.',
     precio: '3100',
     categoria: 'Sin Alcohol'
   },
   {
     titulo: 'Gatorade',
-    descripcion: 'Mix de frutos rojos, limonada casera de menta, jengibre y soda de hibisco.',
+    descripcion: 'Bebida isotónica.',
     precio: '3100',
     categoria: 'Sin Alcohol'
   },
   {
     titulo: 'Soda',
-    descripcion: 'Mix de frutos rojos, limonada casera de menta, jengibre y soda de hibisco.',
+    descripcion: 'Agua carbonatada para mezclar bebidas.',
     precio: '3100',
     categoria: 'Sin Alcohol'
   },
   {
     titulo: 'Cigarrillos',
-    descripcion: 'Volcán con corazón caliente de cacao 70%, acompañado de bocha de helado de pistacho italiano.',
+    descripcion: 'Cajetilla de cigarrillos.',
     precio: '4100',
     categoria: 'Confitería'
   },
   {
-    titulo: 'Bombombun',
-    descripcion: 'Volcán con corazón caliente de cacao 70%, acompañado de bocha de helado de pistacho italiano.',
+    titulo: 'Bonbonbum',
+    descripcion: 'Caramelo duro con chicle.',
     precio: '4100',
     categoria: 'Confitería'
   }
@@ -217,7 +217,7 @@ function getCategoryIcon(categoria, titulo) {
   if (cat.includes('hamburguesa') || cat.includes('tapa') || tit.includes('burger') || tit.includes('taco')) {
     return 'utensils-crossed';
   }
-  if (cat.includes('postre') || tit.includes('volcán') || tit.includes('helado')) {
+  if (cat.includes('confitería') || tit.includes('volcán') || tit.includes('helado')) {
     return 'ice-cream';
   }
   if (cat.includes('sin alcohol') || cat.includes('bebida')) {
