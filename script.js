@@ -72,10 +72,16 @@ const DEMO_MENU_DATA = [
     categoria: 'Sin Alcohol'
   },
   {
+    titulo: 'Cigarrillo',
+    descripcion: 'Unidad de cigarro',
+    precio: '1500',
+    categoria: 'Cigarrillos'
+  },
+  {
     titulo: 'Cigarrillos',
     descripcion: 'Cajetilla de cigarrillos.',
     precio: '4100',
-    categoria: 'Confitería'
+    categoria: 'Cigarrillos'
   },
   {
     titulo: 'Bonbonbum',
@@ -208,7 +214,7 @@ function getCategoryIcon(categoria, titulo) {
   const cat = (categoria || '').toLowerCase();
   const tit = (titulo || '').toLowerCase();
 
-  if (cat.includes('cóctel') || cat.includes('coctel') || tit.includes('gin') || tit.includes('sour')) {
+  if ((cat.includes('agua') && !cat.includes('aguardiente')) ||  (tit.includes('agua') && !tit.includes('aguardiente'))) {
     return 'glass-water';
   }
   if (cat.includes('cerveza') || tit.includes('ipa') || tit.includes('lager')) {
@@ -218,7 +224,10 @@ function getCategoryIcon(categoria, titulo) {
     return 'utensils-crossed';
   }
   if (cat.includes('confitería') || tit.includes('volcán') || tit.includes('helado')) {
-    return 'ice-cream';
+    return 'lollipop';
+  }
+  if (cat.includes('cigarrillos') || tit.includes('Cigarrillos') ) {
+    return 'cigarette';
   }
   if (cat.includes('sin alcohol') || cat.includes('bebida')) {
     return 'cup-soda';
@@ -417,7 +426,7 @@ function renderProducts() {
 
         <div class="price-tag text-lg font-mono font-bold mt-auto pt-3 border-t border-zinc-800/60 flex items-center justify-between">
           <span>${formattedPrice}</span>
-          <i data-lucide="coins" class="w-4 h-4 text-zinc-600 group-hover:text-purple-400 transition-colors"></i>
+          <i data-lucide="badge-check" class="w-4 h-4 text-zinc-600 group-hover:text-purple-400 transition-colors"></i>
         </div>
       </article>
     `;
